@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://merakilearn.org/favicon.png"
+    />
+    <title>Meraki Attendance Record</title>
+    <script src="options.js"></script>
+    <script src="background.js" defer></script>
+    <link rel="stylesheet" href="options.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div class="card-popup"></div>
+    <div class="container hoverme">
+      <div class=" pop">
+        <div class=" text">
+          <img class="logo-fix" src="./images/meraki.png" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="right-main table-sec">
+        <h1>Meraki Classes History</h1>
+        <div class="table-container">
+          <table id="history" class="table-sec">
+            <tr>
+              <th id="title">TITLE</th>
+              <th id="title">FACILITATOR</th>
+              <th id="count">ATTENDEES</th>
+              <th id="date">DATE</th>
+              <th id="duration">
+                DURATION <br /><small class="smll">(H:M:S)</small>
+              </th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <!-- <tr >
+              <td>Python List Doubt Class</td>
+              <td>mahendra21@navgurukul.org</td>
+              <td>
+                <img src="images/attendees-icon.svg" class="icon-at" />
+                <span id="attendees-count" class="ml-1">3</span>
+              </td>
+              <td>02:12:2022</td>
+              <td>00:39:09</td>
+              <td></td>
+              <td><a id="row-place" href="#">View Details</a></td>
+              <td><img src="images/remove.svg" class="icon-at pointer"/></td>
+            </tr> -->
+          
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card-popup" id="popup-handler">
+      <table class="card-container">
+          <tr>
+              <th></th>
+              <th>Names</th>
+              <th>Joined At</th>
+              <th>Time in Call</th>
+          </tr>
+      </table>
+    </div>
+    <!-- <button type="button" class="btn cancel" onclick="closePopup()">Close</button> -->
+  </body>
+</html>

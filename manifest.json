@@ -1,0 +1,25 @@
+{
+  "name": "Prashant Recorder",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Record screen and audio during Google Meet calls",
+  "icons": {
+    "128": "./images/meraki128.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabCapture",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "./images/meraki.png",
+    "icons":{
+      "16": "./images/meraki16.png",
+      "48": "./images/meraki.png",
+      "128": "./images/meraki.png"
+    }
+  }
+}
